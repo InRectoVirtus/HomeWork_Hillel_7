@@ -4,11 +4,11 @@
 При копировании массива - функция применится к каждому элементу копируемого массива. 
 newL = copy(list, function(value){ return value*10; })
 */
-var copyArray = [];
 
 function copy(list, fun) {
+    let copyArray = [];
 // debugger;
-    Window.copyArray = [...list];
+    copyArray = [...list];
     for(i = 0; i < list.length; i++) {
         copyArray[i] = fun(list[i]);
     };
