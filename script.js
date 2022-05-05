@@ -6,7 +6,7 @@ newL = copy(list, function(value){ return value*10; })
 */
 var copyArray = [];
 
-function copy(list, f) {
+function copy(list, fun) {
 // debugger;
     Window.copyArray = [...list];
     for(i = 0; i < list.length; i++) {
