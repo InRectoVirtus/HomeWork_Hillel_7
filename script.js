@@ -10,7 +10,7 @@ function copy(list, fun) {
 // debugger;
     Window.copyArray = [...list];
     for(i = 0; i < list.length; i++) {
-        copyArray[i] = f(list[i]);
+        copyArray[i] = fun(list[i]);
     };
 
     return copyArray;
